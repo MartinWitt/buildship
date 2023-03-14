@@ -254,7 +254,7 @@ public final class DefaultWorkspaceOperations implements WorkspaceOperations {
             // remove the nature from the project
             List<String> newIds = new ArrayList<>(currentNatureIds);
             newIds.remove(natureId);
-            description.setNatureIds(newIds.toArray(new String[newIds.size()]));
+            description.setNatureIds(newIds.toArray(new String[0]));
 
             // save the updated description
             project.setDescription(description, progress.newChild(1));
