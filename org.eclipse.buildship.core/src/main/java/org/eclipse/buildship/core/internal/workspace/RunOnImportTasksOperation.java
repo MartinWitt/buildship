@@ -111,6 +111,6 @@ public final class RunOnImportTasksOperation {
                 .withFilteredProgress()
                 .build();
         BuildLauncher launcher = CorePlugin.internalGradleWorkspace().getGradleBuild(this.buildConfig).newBuildLauncher(runConfiguration, progressAttributes);
-        launcher.forTasks(tasksToRun.toArray(new String[tasksToRun.size()])).run();
+        launcher.forTasks(tasksToRun.toArray(new String[0])).run();
     }
 }

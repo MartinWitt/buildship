@@ -339,7 +339,7 @@ public class PatternFilter extends ViewerFilter {
             }
             i = j;
         }
-        return words.toArray(new String[words.size()]);
+        return words.toArray(new String[0]);
     }
 
     /**
